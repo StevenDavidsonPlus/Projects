@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
 
 def fast_exp(a, b):
     """Returns a^b in O(lg n) time complexity, where a and b are both
