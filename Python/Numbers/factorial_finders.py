@@ -3,8 +3,11 @@
 def factorialFinderRecursive(n):
     """Returns the factorial of the positive integer n using
        recursion."""
-    if not isinstance(n, int) or n < 0:
+    if not isinstance(n, int):
         raise TypeError('n should be a positive integer.')
+        return None
+    if n < 0:
+        raise ValueError('n should be a positive integer.')
         return None
     if n == 0:
         return 1
@@ -14,8 +17,11 @@ def factorialFinderRecursive(n):
 def factorialFinderLoops(n):
     """Returns the factorial of the positive integer n using
        loops."""
-    if not isinstance(n, int) or n < 0:
+    if not isinstance(n, int):
         raise TypeError('n should be a positive integer.')
+        return None
+    if n < 0:
+        raise ValueError('n should be a positive integer.')
         return None
     result = 1
     for i in range(2, n + 1):
