@@ -3,6 +3,8 @@
 from math import floor, sqrt
 
 def sieveOfEratosthenes(n):
+    '''Returns an array containing all of the prime numbers lower than
+       or equal to n.'''
     if not isinstance(n, int):
         raise TypeError('n should be an integer larger than 1.')
         return None
