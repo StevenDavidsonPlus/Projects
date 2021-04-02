@@ -3,7 +3,7 @@
 def fibSeqToNth(n):
     """Returns the Fibonacci sequences to the nth entry as a list of
        integers."""
-    if not isinstance(n, int) or n < 0:
+    if not isinstance(n, int):
         raise TypeError('n should be a positive integer.')
         return None
     if n < 0:
@@ -19,7 +19,7 @@ def fibSeqToNth(n):
 def fibSeqToX(x):
     """Returns the Fibonacci sequences to the integer n as a list of
        integers."""
-    if not isinstance(x, int) or x < 0:
+    if not isinstance(x, int):
         raise TypeError('x should be a positive integer.')
         return None
     if x < 0:
