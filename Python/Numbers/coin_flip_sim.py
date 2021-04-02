@@ -8,6 +8,9 @@ def coin_flip(n):
     """Returns a dictionary with coin's sides as the keys, and with its
        value corresponding to the number of times that side was landed
        on."""
+    if not isinstance(n, int) or n < 0:
+        raise TypeError('n should be a positive integer.')
+        return None
     result = {}
     for coin_side in coin_sides:
         result[coin_side] = 0
